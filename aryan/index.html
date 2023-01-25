@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan:Home</title>
+    <style>
+        *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body{
+   height: 100%;
+    background: url(/background3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+table tr td {
+    padding: 210px;
+    padding-left: 40px;
+}
+
+table tr td p{
+    color: white;
+}
+
+h1 span{
+    color: white;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: url(/background.jpg) no-repeat;
+    background-position:center ;
+    box-shadow: 0 5px 10px white;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header span{
+    color: blue;
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color:black;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    background:white;
+    color:black;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 20px;
+    background: black;
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid white;
+}
+
+header .navbar ul li ul li ul{
+    left: 200px;
+    top:0;
+
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    header{
+        padding: 20px;
+    }
+    
+    header  label{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background:black;
+        border-top: 1px solid white;
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: black;
+    }
+
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+    table tr td{
+        position: absolute;
+        display: initial;
+    }
+    table tr td{
+        position: absolute;
+        display: initial;
+    }
+
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">its_ary<span>an_yt02</span></a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="/video.html">Video</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td> <h1>its_ary<span>an_yt02</span></h1>
+                    <br>
+                    <p>The webdesign by=<b>"Aryan kishor"</b></p>
+                    <br>
+                      <p><b>  contact us :-</b></p>
+                        <p><b>on instagram- fake_guy_8158
+                    </b></p>
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
